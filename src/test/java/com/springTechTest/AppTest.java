@@ -1,4 +1,4 @@
-package spring_learn.spring_ioc;
+package com.springTechTest;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
