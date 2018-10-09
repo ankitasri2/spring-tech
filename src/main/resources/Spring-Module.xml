@@ -4,7 +4,11 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<bean id="helloBean" class="com.teach.ioc.HelloWorld">
-		<property name="name" value="Rajeev" />
+		<constructor-arg ref="helloMessage" />
+	</bean>
+
+	<bean id="helloMessage" class="com.teach.ioc.HelloMessage">
+		<property name="displayMessage" value="Rajeev Ambasta" />
 	</bean>
 
 </beans>

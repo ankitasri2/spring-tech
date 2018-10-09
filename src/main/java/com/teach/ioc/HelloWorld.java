@@ -1,14 +1,17 @@
 package com.teach.ioc;
 
 public class HelloWorld {
-	private String name;
+	//private String name;
+	HelloMessage helloMessage;
+	
 
-	public void setName(String name) {
-		this.name = name;
+	public HelloWorld(HelloMessage helloMessage) {
+		super();
+		this.helloMessage = helloMessage;
 	}
 
 	public void printHello() {
-		System.out.println("Hello ! " + name);
+		System.out.println("Hello :"+ helloMessage.getDisplayMessage());
 	}
 	
 }
